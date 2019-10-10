@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Nintendo Famicom Emulator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <style type="text/css">
+    .center {display: block; text-align: center;}
+    #box {padding-top: 130px; padding-bottom: 130px;}
+    #screen {transform: scale(2);}
+  </style>
+  <script src="wasm_exec.js"></script>
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <span class="center">
+    <input id="file-input" type="file" />
+    <span id="msg"></span>
+  </span>
+  <div id="box" class="center">
+    <canvas id="screen" width="272" height="240"></canvas>
+  </div>
+  <span class="center">
+    Powered by <a href="https://github.com/ldeng7/go-fc">https://github.com/ldeng7/go-fc</a>
+  </span>
+</body>
+
+</html>
