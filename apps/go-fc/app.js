@@ -41,6 +41,7 @@ let onEmuStart = () => {
 const go = new Go()
 WebAssembly.instantiateStreaming(fetch("go_main.wasm"), go.importObject).
   then(res => {
+	document.getElementById("msg").innerText = "ready"
     goMemArr = new Uint8Array(res.instance.exports.mem.buffer)
     go.run(res.instance)
   })
