@@ -27,7 +27,6 @@ let onRomFileOpened = event => {
 }
 
 let onEmuStart = () => {
-	console.log("fuck")
   canvasCtx = document.getElementById("screen").getContext("2d", {alpha: false})
   canvasData = canvasCtx.createImageData(screenWidth, screenHeight)
 
